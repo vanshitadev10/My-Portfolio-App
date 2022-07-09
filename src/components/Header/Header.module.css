@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+
+.header{
+    position: fixed;
+    top: 0;
+    background-color: #0e131ff0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    font-size: 1.3rem;
+    margin-left: -1rem;
+    width: 1550px;
+}
+
+.name{
+    font-size: 3rem;
+    padding: 1rem 0;
+    margin: 0;
+    font-family: 'Playball', cursive;
+    margin-left: 3rem;
+}
+
+.links{
+    display: flex;
+    gap: 1.5rem;
+    font-weight: 500;
+}
+.links:last-child{
+    margin-right: 3rem;
+}
+.links a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    padding: 8px 8px;
+    cursor: pointer;
+}
+.links a:before, .links a:after
+{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+    cursor: default;
+    pointer-events: none;
+}
+.links--primary a:before, .links--primary a:after
+{
+    background: #aaa;
+}
+.links--secondary a:before, .links--secondary a:after
+{
+    background: var(--light_blue);
+}
+.links--tertiary a:before, .links--tertiary a:after
+{
+    background: var(--light_yellow);
+}
+.links--quaternary a:before, .links--quaternary a:after
+{
+    background: var(--light_peach);
+}
+.links--pentanary a:before, .links--pentanary a:after
+{
+    background: var(--light_green);
+}
+.links--hexnary a:before, .links--hexnary a:after
+{
+    background: var(--dark_green);
+}
+
+.links a:before
+{
+    top: 0;
+    height: 2.5px;
+    transform: translateY(-10px);
+}
+
+.links a:after
+{
+    bottom: 0;
+    height: 2px;
+    transform: translateY(10px);
+}
+
+.links a:hover:before, .links a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}

@@ -1,0 +1,59 @@
+.project__card{
+    animation: flipImage 0.5s ease-in-out;
+    color: #fff;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    height: 75vh;
+    overflow: hidden;
+}
+
+.image__pc{
+    width: 90%;
+    border-radius: 8px;
+}
+
+.project__card .btns{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.project__card p{
+    font-size: 1.1rem;
+    padding: 0 1rem;
+}
+
+.image__mobile{
+    display: none;
+}
+.image__mobile img{
+    width: 47%;
+    height: 83%;
+}
+.note{
+    height: 50%;
+}
+
+.image--remove{
+    display: none;
+}
+.image--display{
+    animation: flipImage 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 75vh;
+}
+
+@keyframes flipImage{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

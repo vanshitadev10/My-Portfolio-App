@@ -1,0 +1,29 @@
+.project{
+    padding-top: 5rem;
+    display: grid;
+    align-items: flex-start;
+    gap: 5rem;
+    color: #fff;
+    padding-bottom: 5rem;
+}
+
+.project__heading{
+    font-size: 4rem;
+    margin-left: 5vw;
+    margin-bottom: 0;
+}
+
+.project__detail{
+    font-size: 1.5rem;
+    margin: 0;
+    margin-left: 5vw;
+}
+
+.project__list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10%;
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Tillana:wght@600&display=swap');
+
+.intro{
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    align-items: flex-start;
+    color: #fff;
+    overflow: hidden;
+}
+
+.intro__aside{
+    margin-left: 48px;
+    padding-top: 7rem;
+}
+.intro__aside span{
+    position: absolute;
+    margin-left: -170px;
+    margin-top: -10px;
+}
+.intro__aside h1{
+    font-size: 5rem;
+    z-index: 3;
+    margin: 0.4em 0;
+    font-family: 'Tillana', cursive;
+}
+.intro__aside h2{
+    font-size: 2rem;
+}
+.intro__aside p{
+    font-size: 1.7rem;
+    margin-bottom: 5rem;
+}
+
+.intro__btn{
+    margin-top: 30px;
+    display: flex;
+    gap: 2rem;
+}
+
+.animation{
+    margin-top: 3.5rem;
+}
+
+@media only screen and (min-width: 1500px){
+    .animation{
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,72 @@
+.section{
+    color: #fff;
+    padding-left: 5vw;
+    padding-top: 5rem;
+    overflow: hidden;
+    max-width: 1500px;
+    /* margin: auto; */
+    display: grid;
+    gap: 1rem;
+    padding-bottom: 5rem;
+}
+.section1{
+    height: 100vh;
+}
+.section2{
+    height: 110vh;
+}
+
+.animation1{
+    display: flex;
+}
+.animation2{
+    display: flex;
+    gap: 2rem;
+}
+
+.heading{
+    margin-bottom: 0;
+    font-size: 4rem;
+}
+
+.detail{
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.workcard{
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+    place-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+}
+.section1 .workcard{
+    height: 85%;
+}
+.section2 .workcard{
+    height: 87%;
+}
+.workcard h1{
+    margin: 0;
+}
+.workcard h2{
+    font-weight: normal;
+    font-size: 1.3rem;
+    margin-bottom: 0.5em;
+}
+.workcard img{
+    width: 50%;
+}
+.workcard p{
+    font-size: 1rem;
+}
