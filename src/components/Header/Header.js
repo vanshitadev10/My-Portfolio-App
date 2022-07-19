@@ -22,7 +22,7 @@ const Header = () => {
 
 
     return (
-        <div className={check ? styles.backdrop : ''} onClick={() => setCheck(false)}>
+        <div className={check ? styles.backdrop : ''}>
             <div className={styles.header} id={styles.menuToggle} style={{ backgroundColor: !modeCtx.mode ? 'rgb(80, 80, 80)' : 'var(--nav_blue)' }}>
                 <p className={styles.name}>{'< Vanshita Dev />'}</p>
 
@@ -31,7 +31,7 @@ const Header = () => {
                     <span className={styles.bar}></span>
                     <span className={styles.bar}></span>
                     <span className={styles.bar}></span>
-                    <div className={`${styles.links} ${styles[nameOfClass]}`} id={styles.menu} style={{ backgroundColor: !modeCtx.mode ? 'rgb(80, 80, 80)' : 'var(--nav_blue)' }}>
+                    <div className={styles.links} id={styles.menu} style={{ backgroundColor: !modeCtx.mode ? 'rgb(80, 80, 80)' : 'var(--nav_blue)' }}>
                         <a href='#intro' alt='Home' onClick={pageNavigateHandler.bind(this, 'links--secondary')}>Home</a>
                         <a href='#skills' alt='Skills' onClick={pageNavigateHandler.bind(this, 'links--tertiary')}>Skills</a>
                         <a href='#open-source' alt='Open Source' onClick={pageNavigateHandler.bind(this, 'links--secondary')} >Open Source</a>
