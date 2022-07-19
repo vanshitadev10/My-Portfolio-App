@@ -69,8 +69,8 @@ const Home = () => {
             <div className={styles['home--second']} style={{ fontSize: fontsize }}>
                 <h1 style={{ marginLeft: defaultmarginleft, color: !modeCtx.mode ? 'var(--light_mode_grey)' : 'rgba(170, 170, 170, 0.6)' }}><span>D</span><span>E</span><span>V</span><span>E</span><span>L</span><span>O</span><span>P</span><span>E</span><span>R</span></h1>
                 <div>
-                    <p style={{ color: !modeCtx.mode ? '#000' : '#fff' }}>Available For Freelance!</p>
-                    <a href='#contact' alt='Contact Me'><Button dull className={styles.btn}>Contact me</Button></a>
+                    <p style={{ color: !modeCtx.mode ? '#000' : '#fff', fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Available For Freelance!</p>
+                    <a href='#contact' alt='Contact Me'><Button dull style={{ boxShadow: !modeCtx.mode ? '0 2px 8px #3d3d3db3' : '0 2px 8px rgba(0, 0, 0, 0.7)'}} className={styles.btn}>Contact me</Button></a>
                 </div>
             </div>
         </div>
