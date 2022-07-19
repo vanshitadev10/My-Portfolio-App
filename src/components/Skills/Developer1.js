@@ -5,7 +5,9 @@ import developerAni1 from '../../lotties/developer2.json';
 
 
 const Developer1Animation = () => {
+
     const anime = useRef(null);
+
     useEffect(() => {
         lottie.loadAnimation({
             container: anime.current,
@@ -16,7 +18,9 @@ const Developer1Animation = () => {
         });
         return () => lottie.stop();
     }, []);
-    return <div style={{ height:'50%', maxWidth: '50vw'}} ref={anime}></div>;
+
+    return <div style={{ height: '50%' }} ref={anime}></div>;
+
 };
 
 export default Developer1Animation;

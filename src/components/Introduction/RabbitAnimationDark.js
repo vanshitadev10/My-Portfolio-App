@@ -1,11 +1,13 @@
 import { useEffect, useRef } from 'react';
 import lottie from 'lottie-web';
 
-import animation from '../../lotties/experience.json';
+import animation from '../../lotties/rabbit-dark.json';
 
 
-const ExpAnimation = () => {
+const RabbitAnimationDark = () => {
+
     const anime = useRef(null);
+
     useEffect(() => {
         lottie.loadAnimation({
             container: anime.current,
@@ -16,7 +18,9 @@ const ExpAnimation = () => {
         });
         return () => lottie.stop();
     }, []);
-    return <div style={{ height:'30vh', maxWidth:'30vw', marginTop: '-1rem', marginLeft: '-6vw' }} ref={anime}></div>;
+
+    return <div style={{ height: '53rem', maxWidth: '100vw' }} ref={anime}></div>;
+
 };
 
-export default ExpAnimation;
+export default RabbitAnimationDark;

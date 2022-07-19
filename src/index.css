@@ -1,30 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
-:root{
+:root {
     --body_blue: #181e2a;
-    --nav_blue: #17223cd7;
+    --nav_blue: #0e131f;
     --light_blue: #9ab6f2;
     --light_grey: #aaaaaab0;
-    --light_yellow: #ffbe86;
-    --light_peach: #d3737b;
-    --light_green: #3a9e79;
-    --dark_green: #215c7a;
+    --light_purple: #8681e9;
+    --light_mode_grey: #898989;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background-color: var(--body_blue);
     margin: 0;
-    font-family: 'Work Sans', sans-serif;
-    width: fit-content;
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    max-width: 2000px;
 }
 
-@media only screen and (min-width: 1500px){
-    body{
-        max-width: 1500px;
+@media only screen and (min-width: 1500px) {
+    body {
+        margin: auto;
+    }
+
+    .center {
         margin: auto;
     }
 }

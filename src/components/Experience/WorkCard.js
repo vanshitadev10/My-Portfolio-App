@@ -1,11 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import 'aos/dist/aos.css';
 
+import ModeChangeContext from '../../store/mode-change-context';
 import Button from '../Button/Button';
 import Card from '../shared/Card';
 import styles from './PastWork.module.css'
 
 const WorkCard = props => {
+
+    const modeCtx = useContext(ModeChangeContext);
 
     const [link, setLink] = useState('');
 
@@ -16,17 +19,19 @@ const WorkCard = props => {
 
     return (
         <div data-aos='flip-left' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true'>
-            <Card className={styles.workcard}>
+            <Card className={styles.workcard} mode={props.mode}>
                 <img src={props.src} alt={props.alt} />
                 <div>
                     <h1>{props.heading}</h1>
-                    <h2>{props.position}</h2>
-                    <p>{props.detail}</p>
-                    {props.button && <Button green onClick={() => setLink(`${props.link}`)}>Have a look at project</Button>}
+                    <h2 style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>{props.position}</h2>
+                    <h3 style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>{props.duration}</h3>
+                    <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>{props.detail}</p>
+                    {props.button && <Button onClick={() => setLink(`${props.link}`)}>{props.btn}</Button>}
                 </div>
             </Card>
         </div>
-    )
-}
+    );
+
+};
 
 export default WorkCard;

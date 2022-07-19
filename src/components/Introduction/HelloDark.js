@@ -1,22 +1,26 @@
 import { useEffect, useRef } from 'react';
 import lottie from 'lottie-web';
 
-import developerAni2 from '../../lotties/developer3.json';
+import helloAni from '../../lotties/hello-dark.json';
 
 
-const Developer2Animation = () => {
+const HelloAnimationDark = () => {
+
     const anime = useRef(null);
+
     useEffect(() => {
         lottie.loadAnimation({
             container: anime.current,
             renderer: "svg",
             loop: true,
             autoplay: true,
-            animationData: developerAni2,
+            animationData: helloAni,
         });
         return () => lottie.stop();
     }, []);
-    return <div style={{ height:'50vh', maxWidth: '20vw'}} ref={anime}></div>;
+
+    return <div style={{ height: '150px' }} ref={anime}></div>;
+    
 };
 
-export default Developer2Animation;
+export default HelloAnimationDark;

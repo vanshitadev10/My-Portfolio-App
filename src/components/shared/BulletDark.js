@@ -1,10 +1,10 @@
 import { useEffect, useRef } from 'react';
 import lottie from 'lottie-web';
 
-import animation from '../../lotties/trophy.json';
+import bullet from '../../lotties/bullet-dark.json';
 
 
-const TrophyAnimation = () => {
+const BulletAnimationDark = () => {
 
     const anime = useRef(null);
 
@@ -14,13 +14,13 @@ const TrophyAnimation = () => {
             renderer: "svg",
             loop: true,
             autoplay: true,
-            animationData: animation,
+            animationData: bullet,
         });
         return () => lottie.stop();
     }, []);
 
-    return <div style={{ maxWidth: '10vw' }} ref={anime}></div>;
+    return <div ref={anime}></div>;
 
 };
 
-export default TrophyAnimation;
+export default BulletAnimationDark;

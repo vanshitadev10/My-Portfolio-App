@@ -7,6 +7,7 @@
     color: #000;
     border-radius: 8px;
 }
+
 .btn-primary:hover,
 .btn-primary:active {
     background-color: #fff;
@@ -15,48 +16,43 @@
 }
 
 
-
-.btn--inverse{
+.btn--inverse {
     background-color: #fff;
-    padding: 0.5rem 0.5rem;
-    padding-bottom: 0.3rem;
-    border-radius: 50%;
 }
+
 .btn--inverse:hover,
 .btn--inverse:active {
     background-color: var(--light_blue);
 }
 
 
-
-.btn--grey{
-    background-color: var(--light_grey);
-    padding: 0.5rem 0.5rem;
+.btn--round {
+    padding: 0.5rem 0.7rem;
     padding-bottom: 0.3rem;
     border-radius: 50%;
 }
-.btn--grey:hover,
-.btn--grey:active {
-    background-color: #fff;
-}
 
 
-
-.btn--peach{
-    background-color: var(--light_peach);
-    border: 1.5px solid #a7585f;
-}
-
-
-
-.btn--green{
-    background-color: var(--light_green);
-    border: 1.5px solid #3a9e799f;
-}
-
-
-@media only screen and (max-width: 992px){
+@media only screen and (max-width: 1200px) {
     .btn-primary {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        padding: 0.5rem 1.2rem;
+    }
+
+    .btn--round {
+        padding: 0.4rem 0.5rem;
+        padding-bottom: 0.3rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .btn-primary {
+        font-size: 0.8rem;
+        padding: 0.5rem 0.8rem;
+    }
+
+    .btn--round {
+        padding: 0.3rem 0.45rem;
+        padding-bottom: 0.3rem;
     }
 }
