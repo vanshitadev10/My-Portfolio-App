@@ -3,7 +3,7 @@
     background-color: var(--light_blue);
     border: 1.5px solid var(--nav_blue);
     padding: 0.7rem 1.5rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
     color: #000;
     border-radius: 8px;
     margin-bottom: 1rem;
