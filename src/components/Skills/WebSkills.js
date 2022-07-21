@@ -41,6 +41,10 @@ const WebSkills = () => {
                         <div className={styles.bullet}>{!modeCtx.mode ? <BulletAnimationLight /> : <BulletAnimationDark />}</div>
                         <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Build websites with best practices for lag free interactions and fast load times. </p>
                     </div>
+                    <div className={styles.points} data-aos='fade-left' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true'>
+                        <div className={styles.bullet}>{!modeCtx.mode ? <BulletAnimationLight /> : <BulletAnimationDark />}</div>
+                        <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Experience of building websites with  Material UI and Bootstrap. </p>
+                    </div>
                 </div>
                 <div className={styles.images}>
                     {/* <div>

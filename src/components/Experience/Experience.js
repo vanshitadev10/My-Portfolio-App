@@ -6,7 +6,7 @@ import skillypandaz from '../../assets/skillypandaz.png';
 import WorkCard from './WorkCard';
 import styles from './PastWork.module.css'
 
-const Experience = props => {
+const Experience = () => {
 
     const modeCtx = useContext(ModeChangeContext);
 
