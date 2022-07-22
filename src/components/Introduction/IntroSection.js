@@ -37,7 +37,7 @@ const IntroSection = () => {
                 <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>I am a Frontend Web Developer with experience of building web applications with React.js {/* / Next.js  */}/ Javascript and some other cool libraries, custom plugins, animations and frameworks.</p>
                 <IconButtons inverse />
                 <div className={styles.intro__btn}>
-                    <Button id='btn4' onClick={() => setLink('https://drive.google.com/file/d/1am57gPbfy8QGlpaAvgtNK0jnNPSlCFBi/view?usp=sharing')}>SEE MY RESUME</Button>
+                    <Button id='btn4' onClick={() => setLink('https://drive.google.com/file/d/1am57gPbfy8QGlpaAvgtNK0jnNPSlCFBi/view?usp=sharing')}>MY RESUME</Button>
                     <a href='#contact' alt='Contact Me'><Button id='btn5'>CONTACT ME</Button></a>
                 </div>
             </aside>
