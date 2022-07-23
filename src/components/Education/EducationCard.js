@@ -9,7 +9,7 @@ const EducationCard = props => {
     const modeCtx = useContext(ModeChangeContext);
 
     return (
-        <div className={styles.list} data-aos='fade-left' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true'>
+        <div className={styles.list} data-aos='fade-left' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true' data-aos-offset='-200'>
             <div className={styles.points}>
                 <img src={props.src} alt={props.alt} />
                 <div>

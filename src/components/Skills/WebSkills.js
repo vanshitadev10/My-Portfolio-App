@@ -29,19 +29,19 @@ const WebSkills = () => {
             <div>
                 <h1 className={styles.heading}>Web Skills</h1>
                 <div className={styles.info}>
-                    <div className={styles.points} data-aos='fade-left' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true'>
+                    <div className={styles.points} data-aos='fade-left' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true' data-aos-offset='-300'>
                         <div className={styles.bullet}>{!modeCtx.mode ? <BulletAnimationLight /> : <BulletAnimationDark />}</div>
                         <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Develop innovative and responsive website layouts for dynamic user experiences.</p>
                     </div>
-                    <div className={styles.points} data-aos='fade-left' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true'>
+                    <div className={styles.points} data-aos='fade-left' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true' data-aos-offset='-300'>
                         <div className={styles.bullet}>{!modeCtx.mode ? <BulletAnimationLight /> : <BulletAnimationDark />}</div>
                         <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Strong preference for easy to use and intuitive UI/UX.</p>
                     </div>
-                    <div className={styles.points} data-aos='fade-left' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true'>
+                    <div className={styles.points} data-aos='fade-left' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true' data-aos-offset='-300'>
                         <div className={styles.bullet}>{!modeCtx.mode ? <BulletAnimationLight /> : <BulletAnimationDark />}</div>
                         <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Build websites with best practices for lag free interactions and fast load times. </p>
                     </div>
-                    <div className={styles.points} data-aos='fade-left' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true'>
+                    <div className={styles.points} data-aos='fade-left' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true' data-aos-offset='-300'>
                         <div className={styles.bullet}>{!modeCtx.mode ? <BulletAnimationLight /> : <BulletAnimationDark />}</div>
                         <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Experience of building websites with  Material UI and Bootstrap. </p>
                     </div>

@@ -18,7 +18,7 @@ const WorkCard = props => {
     }, [link])
 
     return (
-        <div data-aos='flip-left' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true'>
+        <div data-aos='flip-left' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true' data-aos-offset='0'>
             <Card className={styles.workcard} mode={props.mode}>
                 <img src={props.src} alt={props.alt} />
                 <div>

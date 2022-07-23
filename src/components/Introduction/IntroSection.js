@@ -24,7 +24,7 @@ const IntroSection = () => {
 
     return (
         <div className={styles.intro} id='intro' style={{ color: !modeCtx.mode ? '#000' : '#fff' }}>
-            <aside className={styles.intro__aside} data-aos='zoom-out' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true'>
+            <aside className={styles.intro__aside} data-aos='zoom-out' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true' data-aos-offset='-300'>
                 <section>
                     <h1>
                         Hi, I’m Vanshita
