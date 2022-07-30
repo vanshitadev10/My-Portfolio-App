@@ -3,7 +3,7 @@ import 'aos/dist/aos.css';
 
 import ModeChangeContext from '../../store/mode-change-context';
 import useWindowSize from '../../hooks/useWindowSize';
-import Button from '../Button/Button';
+import Button from '../shared/Button/Button';
 import styles from './Home.module.css';
 
 const Home = () => {
@@ -70,7 +70,7 @@ const Home = () => {
                 <h1 style={{ marginLeft: defaultmarginleft, color: !modeCtx.mode ? 'var(--light_mode_grey)' : 'rgba(170, 170, 170, 0.6)' }}><span>D</span><span>E</span><span>V</span><span>E</span><span>L</span><span>O</span><span>P</span><span>E</span><span>R</span></h1>
                 <div>
                     <p style={{ color: !modeCtx.mode ? '#000' : '#fff', fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Available For Freelance!</p>
-                    <a href='#contact' alt='Contact Me'><Button dull style={{ boxShadow: !modeCtx.mode ? '0 2px 8px #3d3d3db3' : '0 2px 8px rgba(0, 0, 0, 0.7)'}} className={styles.btn}>Contact me</Button></a>
+                    <a href='#contact' alt='Contact Me'><Button style={{ boxShadow: !modeCtx.mode ? '0 2px 8px #919191' : '0 2px 8px rgba(0, 0, 0, 0.7)'}} className={styles.btn}>Contact me</Button></a>
                 </div>
             </div>
         </div>

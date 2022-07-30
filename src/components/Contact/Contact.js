@@ -4,7 +4,7 @@ import 'aos/dist/aos.css';
 import ModeChangeContext from '../../store/mode-change-context';
 import useWindowSize from '../../hooks/useWindowSize';
 import myimg from '../../assets/vanshita.jpg';
-import IconButtons from '../shared/IconButtons';
+import IconButtons from '../shared/IconButtons/IconButtons';
 import styles from './Contact.module.css';
 
 const Contact = () => {

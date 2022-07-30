@@ -2,8 +2,8 @@ import React, { useContext, useEffect, useState } from 'react';
 import 'aos/dist/aos.css';
 
 import ModeChangeContext from '../../store/mode-change-context';
-import Button from '../Button/Button';
-import Card from '../shared/Card';
+import Button from '../shared/Button/Button';
+import Card from '../shared/Card/Card';
 import styles from './PastWork.module.css'
 
 const WorkCard = props => {

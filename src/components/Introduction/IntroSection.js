@@ -4,10 +4,10 @@ import 'aos/dist/aos.css';
 import ModeChangeContext from '../../store/mode-change-context';
 import RabbitAnimationDark from './RabbitAnimationDark';
 import RabbitAnimationLight from './RabbitAnimationLight';
-import IconButtons from '../shared/IconButtons';
+import IconButtons from '../shared/IconButtons/IconButtons';
 import HelloAnimationDark from './HelloDark';
 import HelloAnimationLight from './HelloLight';
-import Button from '../Button/Button';
+import Button from '../shared/Button/Button';
 import styles from './IntroSection.module.css';
 
 

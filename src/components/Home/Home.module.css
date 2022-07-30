@@ -61,7 +61,7 @@
 }
 
 .btn {
-    background-color: #aaa;
+    background-color: #aaa !important;
     padding: 0.7rem 1.5rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
     color: #000;

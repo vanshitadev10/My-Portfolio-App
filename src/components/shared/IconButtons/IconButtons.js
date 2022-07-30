@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 
 import Button from '../Button/Button';
 import styles from './IconButtons.module.css'
-import github from '../../assets/github-icon.png'
-import linkedin from '../../assets/linkedin-icon.png'
-import mail from '../../assets/mail-icon.png'
+import github from '../../../assets/github-icon.png'
+import linkedin from '../../../assets/linkedin-icon.png'
+import mail from '../../../assets/mail-icon.png'
 
 const IconButtons = props => {
 
