@@ -24,7 +24,7 @@ const ProjectCard = props => {
     }
 
     return (
-        <div data-aos='zoom-out' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true' data-aos-offset='-200'>
+        <div data-aos='zoom-out' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true'>
             <Card className={`${styles.project__card} ${id === `img${props.project}b` ? styles['image--remove'] : ''}`}>
                 <div className={styles.project__image}>
                     <img className={`${styles.image__pc} ${props.note ? styles.note : ''}`} src={props.src1} alt={`Project-${props.project} wide view`} />

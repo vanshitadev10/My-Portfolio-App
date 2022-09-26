@@ -10,7 +10,7 @@ const Proficiency = () => {
     const modeCtx = useContext(ModeChangeContext);
 
     return (
-        <div className={styles.proficiency} data-aos='fade-right' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-delay='200' data-aos-once='true' data-aos-offset='-200' style={{ color: !modeCtx.mode ? '#000' : '#fff' }}>
+        <div className={styles.proficiency} data-aos='fade-right' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-delay='200' data-aos-once='true' data-aos-offset='-100' style={{ color: !modeCtx.mode ? '#000' : '#fff' }}>
             <h1 className={styles.heading}>Proficiency</h1>
             <div className={styles.proficiency__points}>
                 <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Frontend</p>

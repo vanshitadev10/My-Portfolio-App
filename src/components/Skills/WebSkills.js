@@ -12,6 +12,7 @@ import typescript from '../../assets/typescript.png';
 import javascript from '../../assets/javascript.png';
 import css from '../../assets/css.png';
 import html from '../../assets/html.png';
+import python from '../../assets/python.png';
 import cpp from '../../assets/c-plus-plus.png';
 import cLang from '../../assets/c-program.png'
 import styles from './Skills.module.css';
@@ -29,28 +30,28 @@ const WebSkills = () => {
             <div>
                 <h1 className={styles.heading}>Web Skills</h1>
                 <div className={styles.info}>
-                    <div className={styles.points} data-aos='fade-left' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true' data-aos-offset='-300'>
+                    <div className={styles.points} data-aos='fade-left' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true' data-aos-offset='-100'>
                         <div className={styles.bullet}>{!modeCtx.mode ? <BulletAnimationLight /> : <BulletAnimationDark />}</div>
                         <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Develop innovative and responsive website layouts for dynamic user experiences.</p>
                     </div>
-                    <div className={styles.points} data-aos='fade-left' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true' data-aos-offset='-300'>
+                    <div className={styles.points} data-aos='fade-left' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true' data-aos-offset='-100'>
                         <div className={styles.bullet}>{!modeCtx.mode ? <BulletAnimationLight /> : <BulletAnimationDark />}</div>
                         <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Strong preference for easy to use and intuitive UI/UX.</p>
                     </div>
-                    <div className={styles.points} data-aos='fade-left' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true' data-aos-offset='-300'>
+                    <div className={styles.points} data-aos='fade-left' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true' data-aos-offset='-100'>
                         <div className={styles.bullet}>{!modeCtx.mode ? <BulletAnimationLight /> : <BulletAnimationDark />}</div>
                         <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Build websites with best practices for lag free interactions and fast load times. </p>
                     </div>
-                    <div className={styles.points} data-aos='fade-left' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true' data-aos-offset='-300'>
+                    <div className={styles.points} data-aos='fade-left' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true' data-aos-offset='-100'>
                         <div className={styles.bullet}>{!modeCtx.mode ? <BulletAnimationLight /> : <BulletAnimationDark />}</div>
                         <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Experience of building websites with  Material UI and Bootstrap. </p>
                     </div>
                 </div>
                 <div className={styles.images}>
-                    {/* <div>
+                    <div>
                         <img className={styles.img} src={nextjs} alt='Next.js' />
                         <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Next.js</p>
-                    </div> */}
+                    </div>
                     <div>
                         <img src={reactjs} alt='React.js' />
                         <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>React.js</p>
@@ -79,12 +80,16 @@ const WebSkills = () => {
                 <div className={`${styles.images} ${styles.program}`}>
                     <h1>Programming Skills:</h1>
                     <div>
+                        <img src={python} alt='Python' />
+                        <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Python</p>
+                    </div>
+                    <div>
                         <img src={cpp} alt='C++' />
-                        <p>C++</p>
+                        <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>C++</p>
                     </div>
                     <div>
                         <img src={cLang} alt='C' />
-                        <p>C</p>
+                        <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>C</p>
                     </div>
                 </div>
             </div>
