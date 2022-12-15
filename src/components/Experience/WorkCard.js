@@ -26,7 +26,8 @@ const WorkCard = props => {
                     <h2 style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>{props.position}</h2>
                     <h3 style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>{props.duration}</h3>
                     <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>{props.detail}</p>
-                    {props.button && <Button onClick={() => setLink(`${props.link}`)}>{props.btn}</Button>}
+                    {props.button && <Button onClick={() => setLink(`${props.link1}`)}>{props.btn1}</Button>}
+                    {props.btn2 && <Button onClick={() => setLink(`${props.link2}`)}>{props.btn2}</Button>}
                 </div>
             </Card>
         </div>

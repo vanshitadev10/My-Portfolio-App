@@ -48,10 +48,10 @@ const WebSkills = () => {
                     </div>
                 </div>
                 <div className={styles.images}>
-                    <div>
+                    {/* <div>
                         <img className={styles.img} src={nextjs} alt='Next.js' />
                         <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Next.js</p>
-                    </div>
+                    </div> */}
                     <div>
                         <img src={reactjs} alt='React.js' />
                         <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>React.js</p>

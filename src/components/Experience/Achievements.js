@@ -17,7 +17,7 @@ const Achievements = () => {
                 <div><TrophyAnimation /></div>
             </div>
             <div className={styles.list}>
-                <WorkCard src={microsoft} alt={'Microsoft Engage 2022'} heading={'Microsoft Engage 2022'} position={'Mentee'} detail={'I was shortlisted as a mentee for Intern Engage 2022. Under this program I made a Face Recognition Authentication App using React.js, Face-api.js and Firebase Reatime Database. Further I was also shortlisted for the interview round for the post of SDE intern at Microsoft.'} button link={'https://github.com/vanshitadev10/Microsoft-Engage2022-Face-Recognition-App'} btn='Have A Look At Project' />
+                <WorkCard src={microsoft} alt={'Microsoft Engage 2022'} heading={'Microsoft Engage 2022'} position={'Mentee'} detail={'I was shortlisted as a mentee for Intern Engage 2022. Under this program I made a Face Recognition Authentication App using React.js, Face-api.js and Firebase Reatime Database. Further I was also shortlisted for the interview round for the post of SDE intern at Microsoft.'} button link1={'https://github.com/vanshitadev10/Microsoft-Engage2022-Face-Recognition-App'} btn1='Have A Look At Project' />
             </div>
         </div>
     );
