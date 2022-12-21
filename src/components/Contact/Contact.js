@@ -59,7 +59,7 @@ const Contact = () => {
             <div className={styles.contact__details} data-aos='fade-down' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true'>
                 <div>
                     <h1 className={styles.heading}>Let's build something great!</h1>
-                    <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>I am available to work on your projects and bring your ideas to life. I am just a click away!</p>
+                    <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Available to work on your projects and bring your ideas to life. I am just a click away!</p>
                     <h2>Frontend Developer</h2>
                     <h2>India</h2>
                     <IconButtons grey />
