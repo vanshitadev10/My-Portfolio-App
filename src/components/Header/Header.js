@@ -51,7 +51,7 @@ const Header = () => {
                         <a href='#experience' alt='Experience' onClick={pageNavigateHandler.bind(this, 'links--tertiary')}>Experience</a>
                         <a href='#contact' alt='Contact Me' onClick={pageNavigateHandler.bind(this, 'links--secondary')}>Contact Me</a>
                         <label className={styles.switch}>
-                            <input type={'checkbox'} checked={darkMode} onChange={() => setDarkMode(prevState => prevState === true ? false : true)} />
+                            <input type={'checkbox'} checked={darkMode} onChange={() => {setDarkMode(prevState => prevState === true ? false : true); setCheck(prevState => prevState === true ? false : true);}} />
                             <span className={`${styles.slider} ${styles.round}`}></span>
                         </label>
                     </div>
