@@ -58,9 +58,19 @@ const Home = () => {
     }
 
 
+    const styleLight = {
+        background: 'linear-gradient(180deg, rgba(174,174,174,1) 0%, rgba(197,197,197,1) 30%, rgba(255,255,255,1) 100%)',
+        color: '#000'
+    }
+
+    const styleDark = {
+        background: 'linear-gradient(0deg, rgba(14,19,31,1) 0%, rgba(24,30,42,1) 40%, rgba(29,41,68,1) 100%)',
+        color: '#fff'
+    }
+
 
     return (
-        <div className={styles.home} ref={scrollRef} data-aos='fade-up' data-aos-duration='700' data-aos-easing='ease-in-out'>
+        <div className={styles.home} ref={scrollRef} data-aos='fade-up' data-aos-duration='700' data-aos-easing='ease-in-out' style={!modeCtx.mode ? styleLight : styleDark}>
             <div className={styles['home--first']} style={{ width: (currentMargin === 0) ? `${windowSize}px` : screenwidth, fontSize: fontsize }}>
                 <h1 style={{ marginLeft: (currentMargin === 0) ? defaultmarginleft : setmarginleft, color: !modeCtx.mode ? 'var(--light_mode_grey)' : 'rgba(170, 170, 170, 0.6)' }}><span>F</span><span>R</span><span>O</span><span>N</span><span>T</span></h1>
                 <div className={styles['extendable-line']} style={{ width: (currentMargin === 0) ? defaultwidth : setwidth, marginLeft: defaultmarginleft, height: setheight, backgroundColor: !modeCtx.mode ? 'var(--light_mode_grey)' : 'rgba(170, 170, 170, 0.6)' }}></div>

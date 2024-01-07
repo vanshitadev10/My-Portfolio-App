@@ -17,7 +17,7 @@ const OpenSource = () => {
     const modeCtx = useContext(ModeChangeContext);
 
     return (
-        <div className={styles.project} id='open-source' style={{ color: !modeCtx.mode ? '#000' : '#fff' }}>
+        <div className={styles.project} id='open-source' style={{ color: !modeCtx.mode ? '#000' : '#fff', background: !modeCtx.mode ? '#fff' : 'rgba(14,19,31,1)' }}>
             <div>
                 <h1 className={styles.project__heading}>Open Source project</h1>
                 <p className={styles.project__detail} style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Some cool projects that I built till now...</p>

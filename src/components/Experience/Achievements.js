@@ -10,8 +10,19 @@ const Achievements = () => {
 
     const modeCtx = useContext(ModeChangeContext);
 
+
+    const styleLight = {
+        background: 'rgb(255,255,255)',
+        color: '#000'
+    }
+
+    const styleDark = {
+        background: 'rgb(14,19,31)',
+        color: '#fff'
+    }
+
     return (
-        <div className={styles.section} style={{ color: !modeCtx.mode ? '#000' : '#fff' }}>
+        <div className={styles.section} style={!modeCtx.mode ? styleLight : styleDark}>
             <div className={styles.animation}>
                 <h1 className={styles.heading}>Achievements & Certifications</h1>
                 <div><TrophyAnimation /></div>

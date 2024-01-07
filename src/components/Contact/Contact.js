@@ -48,8 +48,18 @@ const Contact = () => {
         return () => clearInterval(interval);
     }, [margin, pause]);
 
+    const styleLight = {
+        background: 'linear-gradient(0deg, rgba(174,174,174,1) 0%, rgba(197,197,197,1) 30%, rgba(255,255,255,1) 100%)',
+        color: '#000'
+    }
+
+    const styleDark = {
+        background: 'linear-gradient(180deg, rgba(14,19,31,1) 0%, rgba(24,30,42,1) 40%, rgba(29,41,68,1) 100%)',
+        color: '#fff'
+    }
+
     return (
-        <div className={styles.contact} id='contact' style={{ color: !modeCtx.mode ? '#000' : '#fff' }}>
+        <div className={styles.contact} id='contact' style={!modeCtx.mode ? styleLight : styleDark}>
             <p data-aos='fade-up' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true' style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Got a question, proposal or a project or want to work together on something? Feel free to reach out!</p>
             <div className={`${styles.train__margin} ${styles['train__margin--up']}`} style={{ backgroundColor: !modeCtx.mode ? 'var(--light_mode_grey)' : '#aaa' }} ></div>
             <div className={styles['contact--train']}>

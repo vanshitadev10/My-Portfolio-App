@@ -11,8 +11,18 @@ const Experience = () => {
 
     const modeCtx = useContext(ModeChangeContext);
 
+    const styleLight = {
+        background: 'rgb(255,255,255)',
+        color: '#000'
+    }
+
+    const styleDark = {
+        background: 'rgb(14,19,31)',
+        color: '#fff'
+    }
+
     return (
-        <div className={styles.section} id='experience' style={{ color: !modeCtx.mode ? '#000' : '#fff' }}>
+        <div className={styles.section} id='experience' style={!modeCtx.mode ? styleLight : styleDark}>
             <div>
                 <h1 className={styles.heading}>Experience</h1>
                 <p className={styles.detail} style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>My Experience as a Front-end Web Developer...</p>

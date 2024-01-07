@@ -23,7 +23,7 @@ const IntroSection = () => {
     }, [link]);
 
     return (
-        <div className={styles.intro} id='intro' style={{ color: !modeCtx.mode ? '#000' : '#fff' }}>
+        <div className={styles.intro} id='intro' style={{ color: !modeCtx.mode ? '#000' : '#fff', background: !modeCtx.mode ? '#fff' : 'rgba(14,19,31,1)' }}>
             <aside className={styles.intro__aside} data-aos='zoom-out' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true' data-aos-offset='-300'>
                 <section>
                     <h1>
@@ -41,7 +41,7 @@ const IntroSection = () => {
                     <a href='#contact' alt='Contact Me'><Button id='btn5'>CONTACT ME</Button></a>
                 </div>
             </aside>
-            <div className={styles.animation}>{!modeCtx.mode ? <RabbitAnimationLight /> : <RabbitAnimationDark />}</div>
+            <div className={styles.animation} style={{background: !modeCtx.mode ? '#fff' : 'radial-gradient(closest-side, rgba(44,56,83,1) 0%, rgba(14,19,31,1) 100%)' }}>{!modeCtx.mode ? <RabbitAnimationLight /> : <RabbitAnimationDark />}</div>
         </div>
     );
 

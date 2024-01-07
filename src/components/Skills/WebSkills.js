@@ -22,8 +22,19 @@ const WebSkills = () => {
 
     const modeCtx = useContext(ModeChangeContext);
 
+
+    const styleLight = {
+        background: 'linear-gradient(0deg, rgba(174,174,174,1) 0%, rgb(255,255,255) 100%)',
+        color: '#000'
+    }
+
+    const styleDark = {
+        background: 'linear-gradient(0deg, rgba(29,41,68,1) 0%, rgba(14,19,31,1) 100%)',
+        color: '#fff'
+    }
+
     return (
-        <div className={styles.skill} id='skills' style={{ color: !modeCtx.mode ? '#000' : '#fff' }}>
+        <div className={styles.skill} id='skills' style={!modeCtx.mode ? styleLight : styleDark}>
             <div className={styles.animation}>
                 <Developer1Animation />
             </div>
@@ -32,26 +43,22 @@ const WebSkills = () => {
                 <div className={styles.info}>
                     <div className={styles.points} data-aos='fade-left' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true' data-aos-offset='-100'>
                         <div className={styles.bullet}>{!modeCtx.mode ? <BulletAnimationLight /> : <BulletAnimationDark />}</div>
-                        <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Develop innovative and responsive website layouts for dynamic user experiences.</p>
+                        <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Expertise in managing application state efficiently.</p>
                     </div>
                     <div className={styles.points} data-aos='fade-left' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true' data-aos-offset='-100'>
                         <div className={styles.bullet}>{!modeCtx.mode ? <BulletAnimationLight /> : <BulletAnimationDark />}</div>
-                        <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Strong preference for easy to use and intuitive UI/UX.</p>
+                        <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Adherence to security measures to protect against common web vulnerabilities.</p>
                     </div>
                     <div className={styles.points} data-aos='fade-left' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true' data-aos-offset='-100'>
                         <div className={styles.bullet}>{!modeCtx.mode ? <BulletAnimationLight /> : <BulletAnimationDark />}</div>
-                        <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Build websites with best practices for lag free interactions and fast load times. </p>
-                    </div>
-                    <div className={styles.points} data-aos='fade-left' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-once='true' data-aos-offset='-100'>
-                        <div className={styles.bullet}>{!modeCtx.mode ? <BulletAnimationLight /> : <BulletAnimationDark />}</div>
-                        <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Experience of building websites with  Material UI and Bootstrap. </p>
+                        <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Strong preference for building websites with best practices for lag free interactions and fast load times. </p>
                     </div>
                 </div>
                 <div className={styles.images}>
-                    {/* <div>
+                    <div>
                         <img className={styles.img} src={nextjs} alt='Next.js' />
                         <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Next.js</p>
-                    </div> */}
+                    </div>
                     <div>
                         <img src={reactjs} alt='React.js' />
                         <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>React.js</p>

@@ -9,6 +9,8 @@
     margin: auto;
     padding-top: 8rem;
     font-size: 9rem;
+    background: rgb(14,19,31);
+    background: linear-gradient(0deg, rgba(14,19,31,1) 0%, rgba(24,30,42,1) 40%, rgba(29,41,68,1) 100%);
 }
 
 .home h1 {
