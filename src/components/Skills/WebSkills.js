@@ -24,7 +24,7 @@ const WebSkills = () => {
 
 
     const styleLight = {
-        background: 'linear-gradient(0deg, rgba(174,174,174,1) 0%, rgb(255,255,255) 100%)',
+        background: '#fff',
         color: '#000'
     }
 

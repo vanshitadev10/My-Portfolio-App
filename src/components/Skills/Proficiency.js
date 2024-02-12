@@ -11,7 +11,7 @@ const Proficiency = () => {
 
 
     const styleLight = {
-        background: 'linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(174,174,174,1) 100%)',
+        background: '#fff',
         color: '#000'
     }
 
@@ -22,7 +22,7 @@ const Proficiency = () => {
 
     return (
         <div style={!modeCtx.mode ? styleLight : styleDark}>
-            <div className={styles.proficiency} data-aos='fade-right' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-delay='200' data-aos-once='true' data-aos-offset='-100' >
+            <div className={styles.proficiency} data-aos='fade-right' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-delay='200' data-aos-once='true' data-aos-offset='-100' style={{color: !modeCtx.mode ? '#000' : '#fff'}}>
                 <h1 className={styles.heading}>Proficiency</h1>
                 <div className={styles.proficiency__points}>
                     <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Programming Languages</p>

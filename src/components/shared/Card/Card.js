@@ -8,7 +8,7 @@ const Card = props => {
     const modeCtx = useContext(ModeChangeContext);
 
     const styleLight = {
-        background: 'linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(174,174,174,1) 100%)',
+        background: 'linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(200,200,200,1) 100%)',
         color: '#000',
         boxShadow: '4px 4px 7px #bbbbbb'
     }

@@ -59,7 +59,7 @@ const Home = () => {
 
 
     const styleLight = {
-        background: 'linear-gradient(180deg, rgba(174,174,174,1) 0%, rgba(197,197,197,1) 30%, rgba(255,255,255,1) 100%)',
+        background: '#fff',
         color: '#000'
     }
 
