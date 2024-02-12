@@ -21,23 +21,25 @@ const Proficiency = () => {
     }
 
     return (
-        <div className={styles.proficiency} data-aos='fade-right' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-delay='200' data-aos-once='true' data-aos-offset='-100' style={!modeCtx.mode ? styleLight : styleDark}>
-            <h1 className={styles.heading}>Proficiency</h1>
-            <div className={styles.proficiency__points}>
-                <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Programming Languages</p>
-                <div className={styles.bar}><div className={styles.bar__color} id={styles.bar1}></div></div>
-            </div>
-            <div className={styles.proficiency__points}>
-                <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Libraries and frameworks</p>
-                <div className={styles.bar}><div className={styles.bar__color} id={styles.bar2}></div></div>
-            </div>
-            <div className={styles.proficiency__points}>
-                <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>User interface (UI)</p>
-                <div className={styles.bar}><div className={styles.bar__color} id={styles.bar3}></div></div>
-            </div>
-            <div className={styles.proficiency__points}>
-                <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Application Programming Interfaces (APIs)</p>
-                <div className={styles.bar}><div className={styles.bar__color} id={styles.bar4}></div></div>
+        <div style={!modeCtx.mode ? styleLight : styleDark}>
+            <div className={styles.proficiency} data-aos='fade-right' data-aos-duration='700' data-aos-easing='ease-in-out' data-aos-delay='200' data-aos-once='true' data-aos-offset='-100' >
+                <h1 className={styles.heading}>Proficiency</h1>
+                <div className={styles.proficiency__points}>
+                    <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Programming Languages</p>
+                    <div className={styles.bar}><div className={styles.bar__color} id={styles.bar1}></div></div>
+                </div>
+                <div className={styles.proficiency__points}>
+                    <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Libraries and frameworks</p>
+                    <div className={styles.bar}><div className={styles.bar__color} id={styles.bar2}></div></div>
+                </div>
+                <div className={styles.proficiency__points}>
+                    <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>User interface (UI)</p>
+                    <div className={styles.bar}><div className={styles.bar__color} id={styles.bar3}></div></div>
+                </div>
+                <div className={styles.proficiency__points}>
+                    <p style={{ fontWeight: !modeCtx.mode ? 'bold' : 'normal' }}>Application Programming Interfaces (APIs)</p>
+                    <div className={styles.bar}><div className={styles.bar__color} id={styles.bar4}></div></div>
+                </div>
             </div>
         </div>
     );
